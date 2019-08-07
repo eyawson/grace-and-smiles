@@ -7,7 +7,7 @@
 
 body {
   background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #333;
   box-sizing: border-box;
   font-size: 16px;
@@ -20,31 +20,43 @@ a {
 }
 
 .hero-unit {
+  background-image: url('https://via.placeholder.com/300x400');
   margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 200;
   line-height: 30px;
-  background-color: #eee;
   border-radius: 6px;
   padding: 60px;
 }
 
 .hero-unit h1 {
-  font-size: 60px;
+  font-size: 4em;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-@media only screen and (max-width: 450px) {
+.logo {
+  max-width: 20%;
+}
+
+img {
+    max-width: 90%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 320px) {
   body {
     display: grid;
   }
   header {
     display: flex;
   }
-  main.img {
-    max-width: 100%;
-    overflow: hidden;
-  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 769px) {
+  
 }
