@@ -8,7 +8,7 @@
 body {
   background: #fafafa;
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #000;
   box-sizing: border-box;
   font-size: 16px;
   margin: 0 auto;
@@ -19,57 +19,70 @@ a {
   text-decoration: none;
 }
 
-.hero-unit {
-  background-image: url('https://via.placeholder.com/300x400');
-  margin: 50px auto 0 auto;
-  font-size: 1.2em;
-  font-weight: 200;
-  line-height: 30px;
-  border-radius: 6px;
-  padding: 60px;
+header a {
+  color: #000;
 }
 
-.hero-unit h1 {
-  font-size: 4em;
-  line-height: 1;
-  letter-spacing: -1px;
+header,
+#info,
+footer {
+  background-color: #017EF4;
+}
+
+aside,
+#about {
+  background-color: #F5CE06;
+  padding-top: 10px;
+}
+
+section,
+aside,
+address,
+footer {
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+h2,
+h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#info h3 {
+  border-bottom: 1px solid #F5CE06;
+  max-width: fit-content;
 }
 
 .logo {
-  max-width: 20%;
+  max-width: 70px;
+  height: auto;
 }
 
 img {
-    max-width: 100%;
-    overflow: hidden;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 320px) {
-  body {
-    display: grid;
-  }
-  header {
-    display: flex;
-    align-items: center;
-  }
-  nav {
-    display: flex;
-    background-color: #1a0bee;
-  }
-  nav a {
-    padding: 10px;
-    color: white;
-  }
-  nav a:hover {
-    background-color: #fcf002;
-    color: #1a0bee;
-  }
+footer {
+  height: 300px;
 }
 
-@media only screen and (max-width: 768px) {
-  
+footer a {
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 769px) {
-  
+footer a i {
+  color: #fafafa;
 }
+
+footer p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (min-width: 769px) {}
