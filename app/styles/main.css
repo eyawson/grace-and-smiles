@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -19,14 +20,54 @@ a {
   text-decoration: none;
 }
 
+#action {
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+
+.yellow {
+  background-color: #F5CE06;
+  grid-column: 1;
+}
+
+.blue {
+  background-color: #fafafa;
+  grid-column: 2;
+}
+
+.yellow,
+.blue {
+  text-align: center;
+  padding: 1rem;
+}
+
+
 header a {
-  color: #000;
+  border: 1px solid #F5CE06;
+  margin-right: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+header a:hover {
+  transition: ease-in 0.5;
+  background-color: #F5CE06;
 }
 
 header,
 #info,
 footer {
   background-color: #017EF4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  align-items: center;
 }
 
 aside,
@@ -54,6 +95,14 @@ h3 {
   max-width: fit-content;
 }
 
+#reading {
+  margin-bottom: 0px;
+}
+
+#info {
+  margin-top: 0px;
+}
+
 .logo {
   max-width: 70px;
   height: auto;
@@ -62,6 +111,11 @@ h3 {
 img {
   max-width: 100%;
   overflow: hidden;
+}
+
+.more img {
+  height: 200px;
+  width: auto;
 }
 
 footer {
